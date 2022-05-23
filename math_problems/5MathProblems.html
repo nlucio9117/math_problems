@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Math Quiz</title>
+		<script type="text/javascript">
+<!-- prompt to gain user input -->
+function get_name()
+{
+	var name=prompt("Please enter your name"," ");
+	document.getElementById('myname').innerHTML = name;
+}
+<!-- prompt to gain user input -->
+function get_age()
+{
+	var age=prompt ("Hold old are you?"," ");
+	document.getElementById('myage').innerHTML = age;
+}
+<!-- prompt to gain user input -->		
+function getCheckUserAnswer1() {
+		userAnswer=prompt("Enter answer:");
+		message=(userAnswer==14)? "Good job! Correct answer.": 
+		"Sorry, incorrect answer. Keep trying!";
+		alert(message);
+		}
+<!-- prompt to gain user input -->
+function getCheckUserAnswer2() {
+		userAnswer=prompt("Enter answer:");
+		message=(userAnswer==24)? "Good job! Correct answer.": 
+		"Sorry, incorrect answer. Keep trying!";
+		alert(message);
+		}
+<!-- prompt to gain user input -->		
+function getCheckUserAnswer3() {
+		userAnswer=prompt("Enter answer:");
+		message=(userAnswer==11)? "Good job! Correct answer.": 
+		"Sorry, incorrect answer. Keep trying!";
+		alert(message);
+		}		
+<!-- prompt to gain user input -->		
+function getCheckUserAnswer4() {
+		userAnswer=prompt("Enter answer:");
+		message=(userAnswer==16)? "Good job! Correct answer.": 
+		"Sorry, incorrect answer. Keep trying!";
+		alert(message);
+		}
+<!-- prompt to gain user input -->		
+function getCheckUserAnswer5() {
+		userAnswer=prompt("Enter answer:");
+		message=(userAnswer=2)? "Good job! Correct answer.": 
+		"Sorry, incorrect answer. Keep trying!";
+		alert(message);
+		}
+		
+		</script>
+		
+		<!-- css style for h2 heading -->
+		<style>
+		h2{
+		color: green;
+		}
+		</style>
+	</head>
+	
+	<body>
+		<!-- embedded style sheet for body -->
+		<div style="width: 700px; margin: auto; margin-top: 100px;
+		border: 1px solid black; padding: 5px; background-color:
+		#ffff66;">
+		
+		<!-- h2 heading with image -->
+		<h2>Math Quiz <img src = "math.gif" alt "math symbols" height="100"></h2>
+		
+		<!-- creating button for user input -->
+		<p><button type="button" onclick="get_name()"> Enter your name
+	    </button> Hi, there, <span id ="myname">____ </span> </p>
+		<p><button type="button" onclick="get_age()"> Enter your age 
+	    </button> You are: <span id="myage">____ </span> </p>
+		
+			<p>You will take a quick math test. Do not worry, it isn't
+			very hard. I will let you know if you are correct or not. If
+			not, you may keep trying. Good Luck!</p>
+			
+			<br /><hr /><br /> <!--line break with horizontal rule -->
+			<!-- creating button for user input -->
+			<p style="font-weight: bold;"> 5 + 9 = ??</p>
+		<input type="button" value="Click here to enter the answer to this math problem" 
+		onclick="getCheckUserAnswer1();"/>
+			<!-- creating button for user input -->
+			<p style="font-weight: bold;"> 4 * 6 = ??</p>
+		<input type="button" value="Click here to enter the answer to this math problem" 
+		onclick="getCheckUserAnswer2();"/>
+			<!-- creating button for user input -->
+			<p style="font-weight: bold;"> 25 - 14 = ??</p>
+		<input type="button" value="Click here to enter the answer to this math problem" 
+		onclick="getCheckUserAnswer3();"/>
+			<!-- creating button for user input -->
+			<p style="font-weight: bold;"> 48 / 3 = ??</p>
+		<input type="button" value="Click here to enter the answer to this math problem" 
+		onclick="getCheckUserAnswer4();"/>
+			<!-- creating button for user input -->
+			<p style="font-weight: bold;"> 26 % 6 = ??</p>
+		<input type="button" value="Click here to enter the answer to this math problem" 
+		onclick="getCheckUserAnswer5();"/>
+		
+		</div>
+	
+	</body>
+</html>
